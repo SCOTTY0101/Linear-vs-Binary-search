@@ -42,8 +42,8 @@ console.log(linear(unSortedArr, 40));
 let array =  [2,4, 6, 7, 8, 9, 9, 10 , 13, 14 ,15 , 17, 18, 20, 21, 22, 24, 31, 33, 35, 37, 39, 42, 46, 47, 49, 50];
 
 const binarySearch = (array, start, end, num) => {
-    const middle = start + Math.floor((end - start)/2);
-        if ( start <= end) { 
+    const middle = start + Math.floor((end - start) /2);
+        if (start <= end) { 
             if (array[middle] === num) {
                 return middle;
             }
@@ -60,6 +60,7 @@ const binarySearch = (array, start, end, num) => {
     return -1;     
 };
 
+//Change last number in console.log for testing.
 console.log(binarySearch(array, 0, array.length -1 , 4));
 console.log(binarySearch(array, 0, array.length -1 , 20));
 
